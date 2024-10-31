@@ -10,4 +10,9 @@ public class MyClass {
     public String sayHello(){
         return "Hello world";
     }
+
+    @GetMapping(value = {"/test", "/test1"})
+    public String test() {
+        return "Testing";
+    }
 }
